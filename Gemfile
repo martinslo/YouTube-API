@@ -12,6 +12,9 @@ gem 'rack-attack'
 # Usando Devise para gerenciamento de usuários
 gem 'devise'
 
+# Usando Simple_Token_Authentication para gerar um token para autenticação na API
+gem 'simple_token_authentication', '~> 1.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
