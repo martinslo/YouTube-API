@@ -18,10 +18,11 @@ Sobre o aplicativo, você vai precisar das seguintes versões do Ruby e Rails:
 Para testar essa API você pode utilizar o aplicativo Postman, que é bem fácil visualmente.
 Para baixar o Postman <a href="https://www.getpostman.com/apps" target="_blank">clique aqui</a>
 
-1. Primeiro, inicie o projeto via terminal com $rails s;
+Primeiro, inicie o projeto via terminal com $rails s;
 Obs.: Caso tudo dê certo, você pode ir no navegador e digitar localhost:3000 e aparecerá uma tela do Rails.
 
-2. Abra o Postman e o primeiro método de acesso vai ser GET, na URL coloca localhost:3000/api/v1/videos.json e clique em Send.
+# Método GET
+Abra o Postman e o primeiro método de acesso vai ser GET, na URL coloca localhost:3000/api/v1/videos.json e clique em Send.
 Você receberá esse retorno:
 {
     "error": "You need to sign in or sign up before continuing."
@@ -37,7 +38,7 @@ Clique em Send novamente e você receberá esse retorno:
 
 Um retorno vazio, pois não existe dados no banco.
 
-3. Método POST
+# Método POST
 Para adicionar informações na API, mude o método para POST no Postman.
 Clique em Body e é nessa área onde iremos colocar as informações que queremos.
 Por exemplo, vamos adicionar um vídeo de desafios de lâminas, pegue o título e a URL no YouTube e vamos adicionar nas chaves (Keys)
@@ -55,7 +56,7 @@ Clique em Send e deve retornar isso:
     "updated_at": "2018-12-11T13:58:58.249Z"
 }
 
-4. Método PUT
+# Método PUT
 O método PUT serve para atualizar alguma informação na API, vamos adicionar mais um vídeo e depois trocar:
 Temos a seguinte informação na API
 {
@@ -85,7 +86,7 @@ Você terá esse retorno:
     "updated_at": "2018-12-11T14:05:30.365Z"
 }
 
-5. Método DELETE
+# Método DELETE
 Para o método DELETE, basta alterar o método para DELETE e informar o id do vídeo via URL ficando assim, por exemplo, localhost:3000/api/v1/videos/2
 
 Você receberá um retorno vazio e com código 204.
