@@ -6,6 +6,9 @@ ruby '2.5.3'
 # Usando Rack-Cors para permitir a chamada da API por outros sites
 gem 'rack-cors'
 
+# Usando Rack-Attack para proteger a API de ataques
+gem 'rack-attack'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
