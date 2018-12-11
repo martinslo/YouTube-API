@@ -41,5 +41,8 @@ module YoutubeApi
                 methods: %i(get post put patch delete options head)
             end
         end
+    
+    # Configuração do Rack-Attack para proteger a API de ataques
+    config.middleware.use Rack::Attack
   end
 end
