@@ -78,7 +78,7 @@ class Api::V1::VideosController < Api::V1::ApiController
  
    def video_params
  
-     params.require(:video).permit(:name, :email, :phone, :description)
+     params.require(:video).permit(:titulo, :url)
  
    end
  
